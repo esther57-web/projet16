@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4rem 3rem;
+    text-align: center;
+    font-family: Libre Franklin;
+}
+
+svg {
+    margin-bottom: 2rem;
+    scale: 0.8;
+}
+
+h1 {
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 1rem;
+}
+
+span {
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+p {
+    font-size: 15px;
+    color: hsl(209, 33%, 12%);
+    margin-bottom: 2rem;
+}
+
+input, button {
+    padding: 0.8rem;
+    border-radius: 20px;
+    border: solid 1px hsl(223, 87%, 63%);
+    font-family: Libre Franklin;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 59%);
+}
+
+button {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    border: solid 1px hsl(0, 0%, 59%);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.logo img:active {
+    background-color: hsl(223, 87%, 63%);
+}
+
+p1 {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.6rem;
+}
+
+.error {
+    text-align: start;
+}
+
+.errorMax {
+    display: none;
+}
+
+.errorMin {
+    display: none;
+    color: hsl(354, 100%, 66%);
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        padding: 4rem 25%;
+    }
+
+    .errorMin {
+        display: none;
+    }
+
+    .errorMax {
+        display: none;
+        color: hsl(354, 100%, 66%);
+        font-size: 0.7rem;
+        text-align: start;
+        position: relative;
+        left: 2rem;
+    }
+
+    form {
+        display: initial;
+        text-align: start;
+    }
+
+    input {
+        width: 65%;
+        margin-bottom: 0;
+    }
+
+    button {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    img {
+        margin-top: 4rem;
+    }
+
+    
+}
